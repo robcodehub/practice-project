@@ -15,7 +15,7 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/feature1', (req, res, next) => {
-  res.sendFile(path.join(__dirname, 'feature1.html');
+  res.sendFile(path.join(__dirname, 'feature1.html'));
 })
 
 
