@@ -8,7 +8,7 @@ const uuidDefinition = {
   primaryKey: true,
   defaultValue: UUIDV4
 }
- 
+
 const User = conn.define('user', {
   id: uuidDefinition,
   firstName: {
@@ -36,7 +36,7 @@ Story.hasMany(Review);
 User.hasMany(Review, {foreignKey: 'reviewerId'});
 
 
-const syncAndSee = async() => {
+const syncAndSeed = async() => {
 conn.sync({force: true});
 };
 
